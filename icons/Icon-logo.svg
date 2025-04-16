@@ -1,0 +1,19 @@
+<svg width="56" height="70" viewBox="0 0 56 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="white" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="10" y="25" width="36" height="25" rx="6" />
+
+        <circle cx="28" cy="37.5" r="8" />
+        <line x1="36" y1="37.5" x2="44" y2="37.5" />
+
+        <path d="M28 10
+             C30 8, 30 5, 28 3
+             C26 1, 26 4, 27 6
+             C28 8, 26 10, 25 11
+             C24 12, 24 14, 26 15" />
+
+        <path d="M12 50
+             C10 52, 10 56, 14 58
+             C18 60, 20 56, 18 53
+             C17 51, 14 50, 12 50 Z" />
+    </g>
+</svg>
