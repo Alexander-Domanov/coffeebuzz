@@ -7,9 +7,15 @@
   transform: skewX(-10deg)
   position: relative
   z-index: 3
+  @include respond(tab-port)
+    transform: skewX(350deg)
+    padding: 3rem
 
   & > *
     transform: skewX(10deg)
+    @include respond(tab-port)
+      transform: skewX(-350deg)
+      text-align: center
 
   &__img
     float: left
@@ -21,6 +27,10 @@
     margin-right: 5rem
     overflow: hidden
     position: relative
+    @include respond(tab-port)
+      float: none
+      margin: 0 auto
+      margin-bottom: 3rem
 
     img
       height: 100%

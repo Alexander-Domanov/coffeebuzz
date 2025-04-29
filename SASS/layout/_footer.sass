@@ -15,6 +15,13 @@
     &:not(:last-child)
       margin-right: 5rem
 
+    @include respond(tab-land)
+      &:not(:last-child)
+        margin-right: 1.6rem
+    @include respond(tab-port)
+      margin: 0
+      padding: 2rem
+
   &__link
     &:link, &:visited
       color: $color-gray
@@ -30,5 +37,5 @@
 
     &:hover
       transform: rotate(5deg) scale(1.2)
-      color: $color-olive-light
+      color: $color-olive-dark
       text-shadow: $shadow-h2

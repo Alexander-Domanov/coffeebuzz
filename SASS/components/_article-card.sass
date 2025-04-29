@@ -4,6 +4,9 @@
   -moz-perspective: 150rem
   position: relative
   width: 34rem
+  @media only screen and (max-width: 1240px), (hover: none)
+    width: 28rem
+
 
   &__side
     height: 50rem
@@ -87,13 +90,23 @@
         &:not(:last-child)
           margin-bottom: 2rem
 
+        @include respond(tab-land)
+          font-size: 1.5rem
+        @include respond(tab-port)
+          font-size: 2rem
+
+
   &__backSide-box
-    width: 90%
-    text-align: center
     position: absolute
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
+    @media only screen and (max-width: 900px), (hover: none)
+      position: relative
+      top: 0%
+      left: 0%
+      transform: translate(0%, 0%)
+      text-align: center
 
   &__text
     margin-bottom: 8rem

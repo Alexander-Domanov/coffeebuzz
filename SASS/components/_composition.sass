@@ -2,34 +2,39 @@
   position: relative
 
   &__photo
-    width: 30%
+    width: 55%
     box-shadow: $box-shadow
-    border-radius: 2rem
-    z-index: 10
+    border-radius: .5rem
     position: absolute
-    outline-offset: 1rem
+    z-index: 10
     transition: all .2s
+    outline-offset: 1rem
 
     &_n1
       top: 0
       left: 0
 
     &_n2
-      top: 6rem
-      left: 12rem
+      top: 10rem
+      right: 0
 
     &_n3
-      right: 12rem
-      top: 4rem
+      top: 5rem
+      right: -20rem
 
     &_n4
-      right: 0
       top: 0
+      left: 20rem
 
     &:hover
-      outline: .2rem solid $color-olive-light
+      outline: .5rem solid $color-olive-light
       transform: scale(1.1)
       z-index: 20
 
   &:hover &__photo:not(:hover)
     transform: scale(.95)
+
+
+
+
+
